@@ -1787,7 +1787,7 @@ local function run(msg, matches)
             return " ❗️ خطا ربات سازنده سوپرگروه نمیباشد\nلطفا لینک جدید ست کنید" 
          end 
          savelog(msg.to.id, name_log.." ["..msg.from.id.."] requested group link ["..group_link.."]") 
-         return "لینک گروه #('..msg.to.title..') \n"..group_link 
+         return "👑لینک گروه👑\n"..group_link 
       end 
 
       if matches[1] == "invite" and is_sudo(msg) then 
