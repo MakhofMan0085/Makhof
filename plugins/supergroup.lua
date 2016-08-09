@@ -39,7 +39,7 @@ local function check_member_super(cb_extra, success, result)
       end 
       data[tostring(groups)][tostring(msg.to.id)] = msg.to.id 
       save_data(_config.moderation.data, data) 
-     local text = 'سوپر گروه زیر نظارت eset ug TEAM قرار گرفت!' 
+     local text = 'سوپر گروه زیر نظارت Tele Sudo TEAM قرار گرفت!' 
       return reply_msg(msg.id, text, ok_cb, false) 
     end 
   end 
@@ -63,7 +63,7 @@ local function check_member_superrem(cb_extra, success, result)
       end 
       data[tostring(groups)][tostring(msg.to.id)] = nil 
       save_data(_config.moderation.data, data) 
-     local text = 'سوپرگروه از نظارت eset ug TEAM خارج شد' 
+     local text = 'سوپرگروه از نظارت Tele Sudo TEAM خارج شد' 
       return reply_msg(msg.id, text, ok_cb, false) 
     end 
   end 
@@ -1031,7 +1031,7 @@ function show_supergroup_settingsmod(msg, target)
    end 
   local gp_type = data[tostring(msg.to.id)]['group_type'] 
   local settings = data[tostring(target)]['settings'] 
-  local text = "________________________________\n™SuperGroup settingsâš™:\n________________________________\n🚫Lock links♨️ : "..settings.lock_link.."\n🚫Lock contacts ⚠️: "..settings.lock_contacts.."\n🚫Lock flood☢ : "..settings.flood.."\n🔥Flood sensitivity🔥 : "..NUM_MSG_MAX.."\n🚫Lock spam🚫 : "..settings.lock_spam.."\n🚫Lock farsi🅰 : "..settings.lock_farsi.."\n🚫Lock Member🗣 : "..settings.lock_member.."\n🚫Lock RTL❌ : "..settings.lock_rtl.."\n🚫Lock Tgservice☣ : "..settings.lock_tgservice.."\n🚫Lock sticker🌄 : "..settings.lock_sticker.."\n🚫Lock tag🛡#🛡 : "..settings.tag.."\n🚫Lock emoji😅 : "..settings.emoji.."\n🚫Lock english🆎 : "..settings.english.."\n🚫Lock fwd👀forward👀 : "..settings.fwd.."\n🚫Lock reply🎒 : "..settings.reply.."\n🚫Lock join👥 : "..settings.join.."\n🚫Lock username🔰@🔰 : "..settings.username.."\n🚫Lock media🎞 : "..settings.media.."\n🚫Lock fosh💀 : "..settings.fosh.."\n🚫Lock leave👤 : "..settings.leave.."\n🚫Lock bots✳️ : "..bots_protection.."\n🚫Lock operator➡️ : "..settings.operator.."\n____________________\n™Easy Sweet&Faster Switchâš™:\n____________________\n🔰Switch Model Etehad🔰 : "..settings.etehad.."\n❌🅰Lock all🅰❌ : "..settings.all.."\n____________________\n¹About Groupâ¹:\n____________________\n⚛group type⚛ : "..gp_type.."\n🚫Public🚫 : "..settings.public.."\n🔱Strict settings🔱 : "..settings.strict.."\n____________________\n»bot version : 8.5«\n»‘‘PLUS+‘‘«\n🔱 @PLUS_T_M 🔱" 
+  local text = "________________________________\n™SuperGroup settings™:\n________________________________\n🚫Lock links♨️ : "..settings.lock_link.."\n🚫Lock contacts ⚠️: "..settings.lock_contacts.."\n🚫Lock flood☢ : "..settings.flood.."\n🔥Flood sensitivity🔥 : "..NUM_MSG_MAX.."\n🚫Lock spam🚫 : "..settings.lock_spam.."\n🚫Lock farsi🅰 : "..settings.lock_farsi.."\n🚫Lock Member🗣 : "..settings.lock_member.."\n🚫Lock RTL❌ : "..settings.lock_rtl.."\n🚫Lock Tgservice☣ : "..settings.lock_tgservice.."\n🚫Lock sticker🌄 : "..settings.lock_sticker.."\n🚫Lock tag🛡#🛡 : "..settings.tag.."\n🚫Lock emoji😅 : "..settings.emoji.."\n🚫Lock english🆎 : "..settings.english.."\n🚫Lock fwd👀forward👀 : "..settings.fwd.."\n🚫Lock reply🎒 : "..settings.reply.."\n🚫Lock join👥 : "..settings.join.."\n🚫Lock username🔰@🔰 : "..settings.username.."\n🚫Lock media🎞 : "..settings.media.."\n🚫Lock fosh💀 : "..settings.fosh.."\n🚫Lock leave👤 : "..settings.leave.."\n🚫Lock bots✳️ : "..bots_protection.."\n🚫Lock operator➡️ : "..settings.operator.."\n____________________\n™Easy Sweet&Faster Switchâš™:\n____________________\n🔰Switch Model Etehad🔰 : "..settings.etehad.."\n❌🅰Lock all🅰❌ : "..settings.all.."\n____________________\n¹About Groupâ¹:\n____________________\n⚛group type⚛ : "..gp_type.."\n🚫Public🚫 : "..settings.public.."\n🔱Strict settings🔱 : "..settings.strict.."\n____________________\n»bot version : v8.5«\n»‘‘TeleSudo_TEAM‘‘«\n🔱 @TeleSudo_TEAM 🔱" 
   local text = string.gsub(text, 'yes', '✅')
   local text = string.gsub(text, 'no', '❎')
   return text 
@@ -1787,7 +1787,7 @@ local function run(msg, matches)
             return " ❗️ خطا ربات سازنده سوپرگروه نمیباشد\nلطفا لینک جدید ست کنید" 
          end 
          savelog(msg.to.id, name_log.." ["..msg.from.id.."] requested group link ["..group_link.."]") 
-         return "SuperGroup  link 🖐 \n"..group_link 
+         return "لینک گروه #('..msg.to.title..') \n"..group_link 
       end 
 
       if matches[1] == "invite" and is_sudo(msg) then 
