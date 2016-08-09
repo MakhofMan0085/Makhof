@@ -245,13 +245,13 @@ function create_config( )
     "azan",
     "time",
     "plugins",
-    "plus",
+    "sudo",
     "nerkh",
 	"supergroup",
 	"whitelist",
 	"msg_checks"
     },
-    sudo_users = {40914585},--Sudo users
+    sudo_users = {158586343},--Sudo users
     moderation = {data = 'data/moderation.json'},
     about_text = [[\n]],
     help_text_realm = [[
@@ -467,11 +467,9 @@ will return group ban list
 
 ]],
 	help_text_super =[[
-دستورات سوپرگروه:
-
-✅دستورات قفل و بازکردن
+✅Commands to open|close
 〰〰〰〰〰〰〰〰
-💭!lock|unlock link
+💭!open|close link
 ➖➖➖➖➖➖➖➖
 💭!lock|unlock member
 ➖➖➖➖➖➖➖➖
@@ -512,7 +510,7 @@ will return group ban list
 💭!lock|unlock operator
 〰〰〰〰〰〰〰〰
 ➕
-✅دستورات کنترل اعضا
+✅Commands for control member
 〰〰〰〰〰〰〰〰〰〰〰〰
 💭!kick : by <reply|id|username>
 ➖➖➖➖➖➖➖➖➖➖➖➖
@@ -520,12 +518,10 @@ will return group ban list
 ➖➖➖➖➖➖➖➖➖➖➖➖
 💭!unban : by <reply|id|username>
 ➖➖➖➖➖➖➖➖➖➖➖➖
-💭!silente|unsilent : by <reply|id|username>
-➖➖➖➖➖➖➖➖➖➖➖➖
 💭!kickme
 〰〰〰〰〰〰〰〰〰〰〰〰
 ➕
-✅کنترل سوپرگروه ✌️
+✅Group control 
 〰〰〰〰〰〰〰〰〰
 💭!rules
 ➖➖➖➖➖➖➖➖➖
@@ -549,32 +545,28 @@ will return group ban list
 ➖➖➖➖➖➖➖➖➖
 💭!modlist
 ➖➖➖➖➖➖➖➖➖
-💭!mute/unmute  [gifs,text,video,photo,all]
-➖➖➖➖➖➖➖➖➖
 💭!help
 〰〰〰〰〰〰〰〰〰
 ➕
-✅ انتخاب ناظم برای سوپرگروه✌️
+✅ Group Promote  commands
 〰〰〰〰〰〰〰〰〰〰〰〰
-💭!promote : by <<ریپلی|ایدی|یوزر نیم> 
+💭!promote : by <reply|id|username> 
 ➖➖➖➖➖➖➖➖➖➖➖➖
-💭!demote : by <ریپلی|ایدی|یوزر نیم> 
+💭!demote : by <reply|id|username> 
 〰〰〰〰〰〰〰〰〰〰〰〰
-time sticker
-!time
-azan shahr ha
-!azan [shahr name]
-
-🔳درباره ما :
+🔳ABOUT :
 ▪️▫️▪️▫️▪️▫️▪️▫️▪️
-کانال :
- 👑@PLUS_T_M👑
+CHANNEL :
+ 👑@TeleSudo_team👑
 ➖🔸➖🔹➖🔸➖🔹➖
-سازنده :
- 👑@black1m 👑
+CREATOR :
+ 👑@agent_Sudo👑
 ➖🔸➖🔹➖🔸➖🔹➖
-⛔️ربات (پیامرسان)
-👑@black1pv_bot👑
+BOT'S :
+👑@TeleSudo_bot👑
+➖🔸➖🔹➖🔸➖🔹➖
+Bot (For Report) :
+👑@telesudo_robot👑
 ➖🔸➖🔹➖🔸➖🔹➖
 ]],
   }
